@@ -33,4 +33,5 @@ const handler = (req, res) => {
 }
 
 const server = http.createServer(handler);
-server.listen(3000);
+const port = process.env.PORT || 5000;
+server.listen(port);
